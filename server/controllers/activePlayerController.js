@@ -1,6 +1,6 @@
 
 
-const player = [{ id: 0, name: "Player 1", position: "1B" }]
+const player = [{ id: 0, name: "Player 1", position: "1B", healthy: true }]
 let id = 1
 
 module.exports = {
