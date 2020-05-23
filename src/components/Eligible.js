@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Roster from './Roster'
 
 class Eligible extends Component {
     constructor() {
@@ -14,7 +15,10 @@ class Eligible extends Component {
     }
 
     render() {
-        return <div>Eligable.js</div>
+        return <div>
+            <Roster activePlayers={this.props.activePlayers} />
+            Eligable.js
+            </div>
     }
 }
 
