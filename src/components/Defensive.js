@@ -10,3 +10,5 @@ function Defensive(props) {
 }
 
 export default Defensive
+
+//Functional Components do not use the "This" Keyword. 

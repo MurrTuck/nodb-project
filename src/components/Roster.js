@@ -9,6 +9,10 @@ class Roster extends Component {
         }
     }
 
+    deletePlayer() {
+
+    }
+
     render() {
         return (
             <div>Roster.js</div>
