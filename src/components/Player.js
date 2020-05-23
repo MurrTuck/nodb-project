@@ -10,9 +10,9 @@ class Player extends Component {
         }
     }
 
-    handleUpdate(e) { }
+    handleUpdatePostion(e) { }
     handleChange(e) { }
-    handleSave() { }
+    handleSavePostion() { }
 
 
     render() {

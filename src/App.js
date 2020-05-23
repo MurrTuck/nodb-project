@@ -10,7 +10,8 @@ class App extends Component {
     super()
 
     this.state = {
-      activePlayer: []
+      activePlayer: [],
+      activePosition: []
     }
     this.activePlayers = this.activePlayers.bind(this)
     this.editPlayerPosition = this.editPlayerPosition.bind(this)
@@ -21,8 +22,8 @@ class App extends Component {
     // console.log('Component Did Mount!')
   }
   activePlayers() { }
-  editPlayerPosition(id, newPosition) { }
   deletePlayer(id) { }
+  editPlayerPosition(id, newPosition) { }
 
 
   render() {
@@ -31,8 +32,14 @@ class App extends Component {
       <div className="App" >
         <Header />
         <h1>App.js</h1>
-        <Eligible activePlayers={this.activePlayers} />
-        <Defensive activePlayer={this.state.activePlayer} />
+        <Eligible
+          activePlayer={this.state.activePlayer}
+          activePlayers={this.activePlayers}
+          deletePlayer={this.deletePlayer}
+        />
+        <Defensive
+          activePosition={this.state.activePosition}
+          editPlayerPosition={this.editPlayerPosition} />
       </div>
     );
   }
