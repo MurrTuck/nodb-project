@@ -11,7 +11,7 @@ class Eligible extends Component {
     }
 
     componentDidMount() {
-        console.log('Eligible.js Component Did Mount!')
+        // console.log('Eligible.js Component Did Mount!')
     }
 
     render() {

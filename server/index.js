@@ -14,7 +14,7 @@ app.get('/api/ready-up', playersReadyCtrl.getReadyUpPlayers)
 app.get('/api/player', activePlayerCtrl.getActivatedPlayers)
 app.post('/api/player', activePlayerCtrl.activePlayers)
 app.put('/api/player/:player_id', activePlayerCtrl.editPlayerPosition)
-app.delete('api/player/:player_id', activePlayerCtrl.deletePlayer)
+app.delete('/api/player/:player_id', activePlayerCtrl.deletePlayer)
 
 
 app.listen(SERVER_PORT, () => console.log(`Hitting Dingers on port ${SERVER_PORT}`))
