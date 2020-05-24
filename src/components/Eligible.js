@@ -15,9 +15,10 @@ class Eligible extends Component {
     }
 
     render() {
+        console.log("Eligible Active Player", this.props.activePlayer)
         return <div>
             <Roster
-                activePlayers={this.props.activePlayers}
+                activePlayer={this.props.activePlayer}
                 deletePlayer={this.props.deletePlayer} />
             Eligable.js
             </div>

@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Eligible from './components/Eligible'
 import Defensive from './components/Defensive'
 import './App.css';
+import axios from 'axios';
 
 class App extends Component {
   constructor() {
@@ -20,9 +21,24 @@ class App extends Component {
 
   componentDidMount() {
     // console.log('Component Did Mount!')
+    axios.get('/api/player').then((res) => {
+      console.log('get /api/player', res)
+      this.setState({ activePlayer: res.data })
+    })
   }
+
   activePlayers() { }
-  deletePlayer(id) { }
+
+
+  deletePlayer(id) {
+    console.log(id)
+    axios.delete(`/api/player/${id}`).then((res) => {
+      console.log("Active Player Res", res)
+      this.setState({ activePlayer: res.data })
+    })
+
+
+  }
   editPlayerPosition(id, newPosition) { }
 
 
