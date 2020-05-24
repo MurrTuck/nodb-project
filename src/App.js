@@ -14,7 +14,7 @@ class App extends Component {
       activePlayer: [],
       activePosition: []
     }
-    this.activePlayers = this.activePlayers.bind(this)
+    // this.activePlayers = this.activePlayers.bind(this)
     this.editPlayerPosition = this.editPlayerPosition.bind(this)
     this.deletePlayer = this.deletePlayer.bind(this)
   }
@@ -27,7 +27,7 @@ class App extends Component {
     })
   }
 
-  activePlayers() { }
+
 
 
   deletePlayer(id) {
@@ -47,12 +47,13 @@ class App extends Component {
     return (
       <div className="App" >
         <Header />
-        <h1>App.js</h1>
+        <h1>Current Lineup</h1>
         <Eligible
           activePlayer={this.state.activePlayer}
           activePlayers={this.activePlayers}
           deletePlayer={this.deletePlayer}
         />
+        <h2>Benched Players</h2>
         <Defensive
           activePosition={this.state.activePosition}
           editPlayerPosition={this.editPlayerPosition} />

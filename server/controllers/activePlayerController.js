@@ -1,14 +1,14 @@
 
 const player = [
-    { id: 0, name: "Player 1", position: "1B", healthy: true, image: 'image' },
-    { id: 1, name: "Player 2", position: "2B", healthy: false, image: 'image' },
-    { id: 2, name: "Player 3", position: "3B", healthy: true, image: 'image' },
-    { id: 3, name: "Player 4", position: "P", healthy: true, image: 'image' },
-    { id: 4, name: "Player 5", position: "C", healthy: true, image: 'image' },
-    { id: 5, name: "Player 6", position: "CF", healthy: true, image: 'image' },
-    { id: 6, name: "Player 7", position: "LF", healthy: true, image: 'image' },
-    { id: 7, name: "Player 8", position: "RF", healthy: false, image: 'image' },
-    { id: 8, name: "Player 9", position: "SS", healthy: false, image: 'image' },
+    { id: 0, name: "Anthony Rizzo", position: "1B", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10000217.png" },
+    { id: 1, name: "Ben Zobrist", position: "2B", healthy: false, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10000911.png" },
+    { id: 2, name: "Javier Baez", position: "SS", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10000213.png" },
+    { id: 3, name: "Kris Bryant", position: "3B", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10002076.png" },
+    { id: 4, name: "Willson Contreras", position: "C", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10005307.png" },
+    { id: 5, name: "Albert Almora Jr.", position: "CF", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10001989.png" },
+    { id: 6, name: "Kyle Schwarber", position: "LF", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10002093.png" },
+    { id: 7, name: "Jason Heyward", position: "RF", healthy: false, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10001182.png" },
+    { id: 8, name: "Jon Lester", position: "P", healthy: false, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10000193.png" },
 ]
 let id = 9
 

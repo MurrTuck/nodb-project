@@ -10,24 +10,21 @@ class Roster extends Component {
         }
     }
 
-    deletePlayer() {
-
-    }
 
     render() {
         const activePlayerJSX = this.props.activePlayer.map((currentValue) => {
-            console.log('Roster Map', currentValue)
+            // console.log('Roster Map', currentValue)
             return <ActivePlayer
-                playerName={currentValue.name}
                 playerId={currentValue.id}
+                playerName={currentValue.name}
+                playerPhoto={currentValue.image}
+                playerPosition={currentValue.position}
                 deletePlayer={this.props.deletePlayer} />
         })
-
-        console.log('Roster Active Player', this.props.activePlayer)
+        // console.log('Roster Active Player', this.props.activePlayer)
         return (
             <div>
                 {activePlayerJSX}
-
             </div>
 
         )

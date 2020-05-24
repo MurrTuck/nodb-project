@@ -16,12 +16,13 @@ class Eligible extends Component {
 
     render() {
         console.log("Eligible Active Player", this.props.activePlayer)
-        return <div>
+
+        return <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'space-between' }}>
             <Roster
                 activePlayer={this.props.activePlayer}
-                deletePlayer={this.props.deletePlayer} />
-            Eligable.js
-            </div>
+                deletePlayer={this.props.deletePlayer}
+            />
+        </div>
     }
 }
 
