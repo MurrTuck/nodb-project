@@ -1,8 +1,24 @@
 .App {
   text-align: center;
-  background-color: lightgrey;
+}
+
+.headerLogo{
+  height: 80%;
+  width: auto;
+  border: 5px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.container {
+  background-image: url('./components/IMG_44.png');
+  /* filter: blur(5px) */
 }
 
 .cutButton {
-  background-color: red;
+  background: lightcoral;
+  border-radius: 8px;
+  color: black;
 }

@@ -23,7 +23,7 @@ class Roster extends Component {
         })
         // console.log('Roster Active Player', this.props.activePlayer)
         return (
-            <div style={{ backgroundColor: 'purple', padding: '10px' }}>
+            <div>
                 {activePlayerJSX}
             </div>
 

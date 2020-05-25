@@ -20,12 +20,21 @@ class ActivePlayer extends Component {
 
     render() {
         return (
-            <div style={{ display: 'flex', alignItems: 'center', padding: '20px', backgroundColor: 'blue' }}>
-                <div style={{ display: 'flex', alignItems: 'center', alignContent: 'space-between' }}>
-                    <img src={this.props.playerPhoto} alt={this.props.playerName} />
-                    <p>{this.props.playerPosition}</p>
-                    <h3>{this.props.playerName}</h3>
-                    <button onClick={() => this.props.deletePlayer(this.props.playerId)} className="cutButton">CUT PLAYER</button>
+            <div>
+                <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between', border: "1px solid grey", width: "90vw", padding: '10px' }}>
+
+                    <div style={{ display: 'flex', alignItems: 'center', border: '1px solid grey', width: '50%', justifyContent: 'space-evenly', background: 'white' }}>
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <p>{this.props.playerPosition}</p>
+                            <img src={this.props.playerPhoto} alt={this.props.playerName} />
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                            <h3>{this.props.playerName}</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <button onClick={() => this.props.deletePlayer(this.props.playerId)} className="cutButton">CUT PLAYER</button>
+                    </div>
                 </div>
 
             </div>

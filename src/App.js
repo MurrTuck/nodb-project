@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from './components/Header'
 import Eligible from './components/Eligible'
 import Defensive from './components/Defensive'
+import Footer from './components/Footer'
 import './App.css';
 import axios from 'axios';
 
@@ -25,6 +26,11 @@ class App extends Component {
       console.log('get /api/player', res)
       this.setState({ activePlayer: res.data })
     })
+
+    axios.get('/api/benched-players').then((res) => {
+      console.log('Benched Player ComponentDidMount', res)
+      this.setState({ benchedPlayers: res.data })
+    })
   }
 
 
@@ -42,22 +48,26 @@ class App extends Component {
   editPlayerPosition(id, newPosition) { }
 
 
-
   render() {
+
     return (
       <div className="App" >
         <Header />
-        <h1>Current Lineup</h1>
-        <Eligible
-          activePlayer={this.state.activePlayer}
-          activePlayers={this.activePlayers}
-          deletePlayer={this.deletePlayer}
-        />
-        <h2>Benched Players</h2>
-        <Defensive
-          benchedState={this.state.benchedPlayers}
-          benchedPlayers={this.benchedPlayers}
-          editPlayerPosition={this.editPlayerPosition} />
+        <div className="container">
+          <h1>Current Lineup</h1>
+          <Eligible
+            activePlayer={this.state.activePlayer}
+            activePlayers={this.activePlayers}
+            deletePlayer={this.deletePlayer}
+          />
+          <h2>Benched Players</h2>
+          <Defensive
+            benchedState={this.state.benchedPlayers}
+            benchedPlayers={this.state.benchedPlayers}
+            editPlayerPosition={this.editPlayerPosition}
+          />
+        </div>
+        <Footer />
       </div>
     );
   }

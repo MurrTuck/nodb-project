@@ -2,10 +2,16 @@ import React from 'react'
 
 
 function Header(props) {
-    return <header style={{ display: 'flex', justifyContent: 'center', maxHeight: '80px' }}>
-        {/* <img src="https://www.freepnglogos.com/uploads/baseball-png/baseball-cisco-icons-design-0.png" alt="baseball-logo" /> */}
-        <h1>Active Baseball Roster</h1>
-    </header>
+    return <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', border: "5px solid pink" }}>
+        <div className='headerLogo'>
+            <img src="https://ballparkdigest.com/wp-content/uploads/2019/02/MLB-2019.png" alt="baseball-logo" />
+            <div>
+
+                <h1>Active Baseball Roster</h1>
+            </div>
+        </div>
+
+    </div>
 }
 
 export default Header

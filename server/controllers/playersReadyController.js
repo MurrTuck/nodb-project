@@ -1,18 +1,18 @@
 const axios = require('axios')
 
 const players = [
-    { id: 9, name: "Player 1", position: "1B", healthy: true, image: 'image' },
-    { id: 10, name: "Player 2", position: "2B", healthy: false, image: 'image' },
-    { id: 11, name: "Player 3", position: "3B", healthy: true, image: 'image' },
-    { id: 12, name: "Player 4", position: "P", healthy: true, image: 'image' },
-    { id: 13, name: "Player 5", position: "C", healthy: true, image: 'image' },
-    { id: 14, name: "Player 6", position: "CF", healthy: true, image: 'image' },
-    { id: 15, name: "Player 7", position: "LF", healthy: true, image: 'image' },
-    { id: 16, name: "Player 8", position: "RF", healthy: false, image: 'image' },
-    { id: 17, name: "Player 9", position: "SS", healthy: false, image: 'image' },
+    { id: 9, name: "Craig Kimbrel", position: "P", healthy: true, image: 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10000058.png' },
+    { id: 10, name: "Jose Quintana", position: "2B", healthy: false, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10000247.png" },
+    { id: 11, name: "Jason Kipnis", position: "3B", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10000350.png" },
+    { id: 12, name: "Daniel Descolso", position: "P", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10000395.png" },
+    { id: 13, name: "Yu Darvish", position: "C", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10001234.png" },
+    { id: 14, name: "Addison Russell", position: "CF", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10001954.png" },
+    { id: 15, name: "Kyle Hendricks", position: "LF", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10003212.png" },
+    { id: 16, name: "Victor Caratini", position: "RF", healthy: false, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10005633.png" },
+    { id: 17, name: "David Bote", position: "SS", healthy: false, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10007641.png" },
 ]
 
-let id = 10
+let id = 18
 
 
 

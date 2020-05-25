@@ -17,7 +17,7 @@ class Eligible extends Component {
     render() {
         console.log("Eligible Active Player", this.props.activePlayer)
 
-        return <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'space-between', backgroundColor: 'pink' }}>
+        return <div style={{ display: 'flex', alignContent: 'space-between', justifyContent: "center" }}>
             <Roster
                 activePlayer={this.props.activePlayer}
                 deletePlayer={this.props.deletePlayer}
