@@ -47,9 +47,9 @@ class App extends Component {
 
   }
 
-  sendToBiggs(name, position, image) {
-    const body = { name, position, image }
-    axios.post('./api/player', body).then(res => {
+  sendToBiggs(name, position, healthy, image) {
+    const body = { name, position, healthy, image }
+    axios.post('/api/player', body).then(res => {
       this.setState({ activePlayer: res.data })
     })
   }

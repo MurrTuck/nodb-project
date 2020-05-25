@@ -5,7 +5,7 @@
 .headerLogo{
   height: 80%;
   width: auto;
-  border: 5px solid red;
+  /* border: 5px solid red; */
   display: flex;
   justify-content: space-around;
   align-items: center;

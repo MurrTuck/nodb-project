@@ -6,10 +6,15 @@ class Player extends Component {
         super(props)
 
         this.state = {
-            benchedPlayers: ''
+            benchedPlayers: false
         }
+        // this.sendingUp = this.sendingUp.bind(this)
     }
 
+    // sendingUp() {
+    //     const { data } = this.props
+    //     this.props.sendToBiggs(data.name, data.position, data.image)
+    // }
 
 
 

@@ -7,9 +7,14 @@ class BenchedPlayer extends Component {
         super()
 
         this.state = {
-
+            benchedPlayer: false
         }
     }
+
+    // sendingUp() {
+    //     const { data } = this.props
+    //     this.props.sendToBiggs(data.name, data.position, data.image)
+    // }
 
     render() {
         return (
@@ -20,7 +25,7 @@ class BenchedPlayer extends Component {
                     <p>{this.props.playerPosition}</p>
                 </div>
 
-                <button>Send to Biggs</button>
+                <button onClick={() => this.props.sendToBiggs(this.props.playerName, this.props.playerPosition, this.props.playerHeathy, this.props.playerPhoto)}>Send to Biggs</button>
             </div>
         )
     }
