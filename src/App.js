@@ -18,6 +18,7 @@ class App extends Component {
     // this.activePlayers = this.activePlayers.bind(this)
     this.editPlayerPosition = this.editPlayerPosition.bind(this)
     this.deletePlayer = this.deletePlayer.bind(this)
+    this.sendToBiggs = this.sendToBiggs.bind(this)
   }
 
   componentDidMount() {
@@ -45,7 +46,22 @@ class App extends Component {
 
 
   }
-  editPlayerPosition(id, newPosition) { }
+
+  sendToBiggs(name, position, image) {
+    const body = { name, position, image }
+    axios.post('./api/player', body).then(res => {
+      this.setState({ activePlayer: res.data })
+    })
+  }
+
+
+  editPlayerPosition(id, newPosition) {
+    const body = { newPosition }
+
+    axios.put(`/api/player/${id}`, body).then(res => {
+      this.setState({ activePlayer: res.data })
+    })
+  }
 
 
   render() {

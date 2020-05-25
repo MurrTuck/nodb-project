@@ -15,19 +15,15 @@ export default function ContainedButtons() {
 
     return (
         <div className={classes.root}>
-            <Button variant="contained">Default</Button>
+            <Button variant="contained">YouTube</Button>
             <Button variant="contained" color="primary">
-                Primary
+                facebook
       </Button>
             <Button variant="contained" color="secondary">
-                Secondary
+                instagram
       </Button>
-            <Button variant="contained" disabled>
-                Disabled
-      </Button>
-            <Button variant="contained" color="primary" href="#contained-buttons">
-                Link
-      </Button>
+
+
         </div>
     );
 }

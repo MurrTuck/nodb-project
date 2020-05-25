@@ -14,9 +14,11 @@ class BenchedPlayer extends Component {
     render() {
         return (
             <div>
-                <div><img src={this.props.playerPhoto} alt={this.props.playerName} />
+                <div>
+                    <img src={this.props.playerPhoto} alt={this.props.playerName} />
                     <p>{this.props.playerName}</p>
-                    <p>{this.props.playerPosition}</p></div>
+                    <p>{this.props.playerPosition}</p>
+                </div>
 
                 <button>Send to Biggs</button>
             </div>
