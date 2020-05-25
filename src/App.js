@@ -12,7 +12,7 @@ class App extends Component {
 
     this.state = {
       activePlayer: [],
-      activePosition: []
+      benchedPlayers: []
     }
     // this.activePlayers = this.activePlayers.bind(this)
     this.editPlayerPosition = this.editPlayerPosition.bind(this)
@@ -42,8 +42,8 @@ class App extends Component {
   editPlayerPosition(id, newPosition) { }
 
 
-  render() {
 
+  render() {
     return (
       <div className="App" >
         <Header />
@@ -55,7 +55,8 @@ class App extends Component {
         />
         <h2>Benched Players</h2>
         <Defensive
-          activePosition={this.state.activePosition}
+          benchedState={this.state.benchedPlayers}
+          benchedPlayers={this.benchedPlayers}
           editPlayerPosition={this.editPlayerPosition} />
       </div>
     );

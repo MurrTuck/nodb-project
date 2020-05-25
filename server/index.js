@@ -9,6 +9,8 @@ app.use(express.json())
 
 //Player Ready-Up Endpoint
 app.get('/api/ready-up', playersReadyCtrl.getReadyUpPlayers)
+app.get('/api/benched-players', playersReadyCtrl.getBenchedPlayers)
+// app.post('/api/benched-players', playersReadyCtrl.send)
 
 //Active Player Endpoints
 app.get('/api/player', activePlayerCtrl.getActivatedPlayers)

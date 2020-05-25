@@ -8,7 +8,7 @@ const player = [
     { id: 5, name: "Albert Almora Jr.", position: "CF", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10001989.png" },
     { id: 6, name: "Kyle Schwarber", position: "LF", healthy: true, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10002093.png" },
     { id: 7, name: "Jason Heyward", position: "RF", healthy: false, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10001182.png" },
-    { id: 8, name: "Jon Lester", position: "P", healthy: false, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10000193.png" },
+    { id: 8, name: "Jon", position: "P", healthy: false, image: "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/mlb/low-res/10000193.png" },
 ]
 let id = 9
 

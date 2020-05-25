@@ -20,7 +20,7 @@ class ActivePlayer extends Component {
 
     render() {
         return (
-            <div style={{ display: 'flex', alignItems: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center', padding: '20px', backgroundColor: 'blue' }}>
                 <div style={{ display: 'flex', alignItems: 'center', alignContent: 'space-between' }}>
                     <img src={this.props.playerPhoto} alt={this.props.playerName} />
                     <p>{this.props.playerPosition}</p>

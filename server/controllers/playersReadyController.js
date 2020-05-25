@@ -1,16 +1,18 @@
 const axios = require('axios')
 
-const player = [
-    { id: 0, name: "Player 1", position: "1B", healthy: true, image: 'image' },
-    { id: 1, name: "Player 2", position: "2B", healthy: false, image: 'image' },
-    { id: 2, name: "Player 3", position: "3B", healthy: true, image: 'image' },
-    { id: 3, name: "Player 4", position: "P", healthy: true, image: 'image' },
-    { id: 4, name: "Player 5", position: "C", healthy: true, image: 'image' },
-    { id: 5, name: "Player 6", position: "CF", healthy: true, image: 'image' },
-    { id: 6, name: "Player 7", position: "LF", healthy: true, image: 'image' },
-    { id: 7, name: "Player 8", position: "RF", healthy: false, image: 'image' },
-    { id: 8, name: "Player 9", position: "SS", healthy: false, image: 'image' },
+const players = [
+    { id: 9, name: "Player 1", position: "1B", healthy: true, image: 'image' },
+    { id: 10, name: "Player 2", position: "2B", healthy: false, image: 'image' },
+    { id: 11, name: "Player 3", position: "3B", healthy: true, image: 'image' },
+    { id: 12, name: "Player 4", position: "P", healthy: true, image: 'image' },
+    { id: 13, name: "Player 5", position: "C", healthy: true, image: 'image' },
+    { id: 14, name: "Player 6", position: "CF", healthy: true, image: 'image' },
+    { id: 15, name: "Player 7", position: "LF", healthy: true, image: 'image' },
+    { id: 16, name: "Player 8", position: "RF", healthy: false, image: 'image' },
+    { id: 17, name: "Player 9", position: "SS", healthy: false, image: 'image' },
 ]
+
+let id = 10
 
 
 
@@ -29,7 +31,7 @@ module.exports = {
         const rand9 = Math.ceil(Math.random() * 30)
         const rand10 = Math.ceil(Math.random() * 30)
 
-        const baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
+        // const baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
         // const baseUrl = 'http://localhost:4417/api/ready-up'
 
 
@@ -62,5 +64,24 @@ module.exports = {
         })
 
         // res.send({ rand1, rand2, rand3, rand4, rand5, rand6, rand7, rand8, rand9, rand10 })
+
+
     },
+
+    getBenchedPlayers: (req, res) => {
+        res.status(200).send(players)
+    },
+
+    sendToBiggs: (req, res) => {
+        const { name, position, healthy, image } = req.body
+
+        newActivePlayer = { id, name, position, healthy, image }
+
+        player.push(newActivePlayer)
+
+        id++
+
+        res.send(200).send(player)
+    },
+
 }
